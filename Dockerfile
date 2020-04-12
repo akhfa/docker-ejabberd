@@ -1,5 +1,4 @@
 FROM debian:jessie
-MAINTAINER Rafael Römhild <rafael@roemhild.de>
 
 ENV EJABBERD_BRANCH=17.11 \
     EJABBERD_USER=ejabberd \
