@@ -17,6 +17,6 @@ ls -lh
 all_modules=$(ls)
 for module in ${all_modules[@]}; do
   echo Installing module ${module}
-  ejabberdctl module_install ${module} ||:
+  ${EJABBERDCTL} module_install ${module} ||:
 done
-rm -rf /opt/ejabberd/.ejabberd-modules/sources/*
+# rm -rf /opt/ejabberd/.ejabberd-modules/sources/*
