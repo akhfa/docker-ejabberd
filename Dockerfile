@@ -57,7 +57,7 @@ RUN set -x \
         python-mysqldb \
         imagemagick \
         libgd3 \
-        libwebp5 \
+        libwebp6 \
     ' \
     && echo "deb http://packages.erlang-solutions.com/debian buster contrib" >> /etc/apt/sources.list \
     && apt-key adv \
