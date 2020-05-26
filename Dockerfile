@@ -22,6 +22,11 @@ RUN groupadd -r $EJABBERD_USER \
        -d $EJABBERD_HOME \
        $EJABBERD_USER
 
+# Install gnupg
+RUN apt update \
+    && apt install -y gnupg2 \
+    && rm -rf /var/lib/apt/lists/*
+
 # Install packages and perform cleanup
 RUN set -x \
     && buildDeps=' \
